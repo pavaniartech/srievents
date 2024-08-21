@@ -279,3 +279,55 @@ ul.demopage-help_list li a:hover {
   }
 }
 
+/* charan changes */
+
+/* Hamburger Menu Styles */
+.hamburger-menu {
+  position: relative;
+}
+
+.menu-icon {
+  font-size: 30px;
+  cursor: pointer;
+  display: inline-block;
+
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 40px;
+  background-color: #333;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li {
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #444;
+}
+
+.menu ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#menu-toggle:checked + .menu-icon + .menu {
+  display: block;
+}
+.logo {
+  height: 40px; /* Adjust the height of the logo */
+  margin-right: 10px; /* Space between the logo and title */
+}

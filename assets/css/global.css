@@ -1,9 +1,9 @@
 /*custom styles*/
 .navbar-brand > img{
-    width: 18%;
+    width: 15%;
     padding: 0;
     position: relative;
-    top: -65%;
+    top: -50%;
   }
   .navbar .navbar-nav > li > a:active, .navbar .navbar-nav > li > a.active{
     color: var(--primary)!important;
