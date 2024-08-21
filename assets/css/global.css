@@ -1,0 +1,24 @@
+/*custom styles*/
+.navbar-brand > img{
+    width: 18%;
+    padding: 0;
+    position: relative;
+    top: -65%;
+  }
+  .navbar .navbar-nav > li > a:active, .navbar .navbar-nav > li > a.active{
+    color: var(--primary)!important;
+  }
+  .slider-pro img.sp-image, .slider-pro img.sp-thumbnail{
+    display: -webkit-inline-box;
+  }
+  .title{
+    display: inline-block;
+    text-align: center;
+    margin-top: 0;
+    top: 0;
+    vertical-align: top;
+    color: var(--primary)!important;
+  }
+  .header-navibox-3{
+    display: none;
+  }
