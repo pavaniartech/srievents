@@ -1,0 +1,146 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project: Sri Events
+Version:  1.0
+Assigned to:  WebNik
+Primary use: Sri Events
+-------------------------------------------------------------------*/
+
+
+/* FONTS*/
+@import 'https://fonts.googleapis.com/css?family=Lato:100,300,400,400i,700,900|Poppins:300,400,500,600,700|PT+Serif:400,400i,700,700i';
+@import '../fonts/font-awesome-4.6.3/css/font-awesome.min.css';
+@import '../fonts/stroke/style.css';
+@import '../fonts/elegant/style.css';
+@import '../fonts/flaticon/flaticon.css';
+@import '../fonts/simple/simple-line-icons.css';
+
+
+
+/* PLUGIN CSS */
+
+@import '../libs/bootstrap/bootstrap.css';                /* bootstrap */
+@import '../plugins/bootstrap-select/css/bootstrap-select.css';   /* select customization */
+@import '../plugins/headers/header.css';                /* header */
+@import '../plugins/headers/yamm.css';                /* header */
+@import '../plugins/slider-pro/slider-pro.css';         /* main slider */
+@import '../plugins/owl-carousel/owl.theme.css';                 /* other sliders */
+@import '../plugins/bxslider/jquery.bxslider.css';                        /* other sliders */
+@import '../plugins/magnific-popup/magnific-popup.css';            /* modal */
+@import '../plugins/animate/animate.css';                        /* animations */
+@import '../plugins/parallax/parallax.css';                        /* parallax */
+@import '../plugins/flowplayer/skin/playful.css';          /* video-player */
+
+
+
+/* MAIN CSS */
+
+@import 'theme.css';
+@import 'color.css';
+@import 'responsive.css';
+@import 'global.css';
+
+
+/* Main container */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  /* Column styling */
+  .col-md-6 {
+    flex: 0 0 48%;
+    margin-bottom: 20px;
+  }
+  
+  /* Post container */
+  .b-post-sm {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .b-post-sm:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Entry media */
+  .entry-media img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 4px solid #007bff;
+  }
+  
+  /* Entry main */
+  .entry-main {
+    padding: 15px;
+  }
+  
+  /* Entry header */
+  .entry-header {
+    margin-bottom: 10px;
+  }
+  
+  .ui-title-inner {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+    color: #007bff;
+    transition: color 0.3s ease;
+  }
+  
+  .ui-title-inner:hover {
+    color: #0056b3;
+  }
+  
+  /* Entry content */
+  .entry-content {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  /* Decorator */
+  .ui-decor-2_vert {
+    width: 4px;
+    height: 40px;
+    background-color: #007bff;
+    margin-right: 10px;
+    transition: height 0.3s ease;
+  }
+  
+  .b-post-sm:hover .ui-decor-2_vert {
+    height: 50px;
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    .col-md-6 {
+      flex: 0 0 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Animation for entry-media */
+  .entry-media img {
+    opacity: 0;
+    transform: scale(1.1);
+    animation: fadeInScale 0.5s forwards;
+  }
+  
+  @keyframes fadeInScale {
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  

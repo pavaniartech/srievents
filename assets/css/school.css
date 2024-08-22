@@ -1,0 +1,125 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project: Sri Events
+Version:  1.0
+Assigned to:  WebNik
+Primary use: Sri Events
+-------------------------------------------------------------------*/
+
+
+/* FONTS*/
+@import 'https://fonts.googleapis.com/css?family=Lato:100,300,400,400i,700,900|Poppins:300,400,500,600,700|PT+Serif:400,400i,700,700i';
+@import '../fonts/font-awesome-4.6.3/css/font-awesome.min.css';
+@import '../fonts/stroke/style.css';
+@import '../fonts/elegant/style.css';
+@import '../fonts/flaticon/flaticon.css';
+@import '../fonts/simple/simple-line-icons.css';
+
+
+
+/* PLUGIN CSS */
+
+@import '../libs/bootstrap/bootstrap.css';                /* bootstrap */
+@import '../plugins/bootstrap-select/css/bootstrap-select.css';   /* select customization */
+@import '../plugins/headers/header.css';                /* header */
+@import '../plugins/headers/yamm.css';                /* header */
+@import '../plugins/slider-pro/slider-pro.css';         /* main slider */
+@import '../plugins/owl-carousel/owl.theme.css';                 /* other sliders */
+@import '../plugins/bxslider/jquery.bxslider.css';                        /* other sliders */
+@import '../plugins/magnific-popup/magnific-popup.css';            /* modal */
+@import '../plugins/animate/animate.css';                        /* animations */
+@import '../plugins/parallax/parallax.css';                        /* parallax */
+@import '../plugins/flowplayer/skin/playful.css';          /* video-player */
+
+
+
+/* MAIN CSS */
+
+@import 'theme.css';
+@import 'color.css';
+@import 'responsive.css';
+@import 'global.css';
+
+
+/* General grid layout */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -15px; /* Adjust margins between columns */
+}
+
+.col-md-4 {
+  flex: 0 0 30%; /* Adjust width to 30% for 3 columns */
+  max-width: 30%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Rounded corners for images */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Add animation on hover */
+.img-responsive:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.entry-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 15px;
+  transition: color 0.3s ease;
+}
+
+.entry-title a {
+  text-decoration: none;
+  color: #333;
+}
+
+.entry-title a:hover {
+  color: #007bff;
+}
+
+/* Adding fade-in effect */
+.b-post-sm {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+  animation-delay: calc(0.1s * var(--i)); /* Staggered animation */
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.entry-content {
+  font-size: 1em;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Decorations */
+.ui-decor-2 {
+  width: 50px;
+  height: 4px;
+  background-color: #007bff;
+  margin-bottom: 10px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .col-md-4 {
+    flex: 0 0 100%; /* Stack columns on small screens */
+    max-width: 100%;
+    padding: 10px;
+  }
+}
